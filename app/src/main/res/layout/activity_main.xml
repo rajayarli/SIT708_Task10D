@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+
+    <TextView
+        android:id="@+id/email_textview"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/password"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="154dp"
+        android:layout_marginBottom="25dp"
+        android:text="Username" />
+
+    <TextView
+        android:id="@+id/passwordtextview"
+        android:layout_width="131dp"
+        android:layout_height="29dp"
+        android:layout_above="@+id/login"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="-36dp"
+        android:layout_marginBottom="169dp"
+        android:layout_toStartOf="@+id/password"
+        android:text="password" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signup"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="128dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="39dp"
+        android:text="login">
+
+    </Button>
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="128dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="177dp"
+        android:text="signup">
+
+    </Button>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="268dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="166dp"
+
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/username1"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/password"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="26dp"
+        android:layout_toEndOf="@+id/email_textview"
+        android:ems="10"
+        android:inputType="text" />
+
+
+</RelativeLayout>

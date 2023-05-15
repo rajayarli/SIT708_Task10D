@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Task6D</string>
+    <string name="Home">Home</string>
+    <string name="Account">Account</string>
+    <string name="Myorders">My Orders</string>
+    <string-array name="news_full_text">
+        <item>election</item>
+        <item>hiking</item>
+        <item>house</item>
+        <item>oldPeople</item>
+        <item>railway</item>
+        <item>traffic</item>
+        <item>vape</item>
+        <item>wallet</item>
+        <item>wash</item>
+        <item>watch</item>
+    </string-array>
+    <string-array name="news_three_letter_text">
+        <item>election</item>
+        <item>hiking</item>
+        <item>house</item>
+        <item>oldPeople</item>
+        <item>railway</item>
+        <item>traffic</item>
+        <item>vape</item>
+        <item>wallet</item>
+        <item>wash</item>
+        <item>watch</item>
+    </string-array>
+    <string-array name="news_one_letter">
+        <item>election</item>
+        <item>hiking</item>
+        <item>house</item>
+        <item>oldPeople</item>
+        <item>railway</item>
+        <item>traffic</item>
+        <item>vape</item>
+        <item>wallet</item>
+        <item>wash</item>
+        <item>watch</item>
+    </string-array>
+</resources>
