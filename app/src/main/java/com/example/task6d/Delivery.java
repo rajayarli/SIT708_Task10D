@@ -34,8 +34,10 @@ public class Delivery extends AppCompatActivity {
             public void onClick(View view) {
                 String receiver = receiverNameTextView.getText().toString().trim();
                 String location = pickupLocationTextView.getText().toString().trim();
-
+                Intent detail = new Intent(Delivery.this, detail.class);
                 Item item = new Item(receiver, location);
+                detail.putExtra("receiver", item.getReceiver());
+                detail.putExtra("location", item.getLocation());
 
                 Intent intent = new Intent(Delivery.this, More.class);
                 intent.putExtra("item", item);

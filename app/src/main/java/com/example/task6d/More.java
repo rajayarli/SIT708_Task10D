@@ -25,7 +25,6 @@ public class More extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(More.this, "Successfully ordered!", Toast.LENGTH_SHORT).show();
-
                 Intent intent = new Intent(More.this, HomePage.class);
                 intent.putExtra("item", item);
                 startActivity(intent);

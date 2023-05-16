@@ -1,28 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="horizontal"
+    android:id="@+id/linear"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:onClick="activity_detail"
+    android:orientation="horizontal"
     android:padding="16dp">
 
     <ImageView
         android:id="@+id/item_image"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="99dp"
+        android:layout_height="101dp"
         android:src="@drawable/user"
         app:srcCompat="@android:drawable/sym_def_app_icon" />
 
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_width="317dp"
+        android:layout_height="99dp"
         android:layout_marginStart="16dp"
+        android:layout_weight="1"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/receiver"
-            android:layout_width="wrap_content"
+            android:layout_width="111dp"
             android:layout_height="wrap_content"
             android:text="Receiver"
             android:textSize="18sp"
@@ -30,17 +32,18 @@
 
         <TextView
             android:id="@+id/location"
-            android:layout_width="wrap_content"
+            android:layout_width="209dp"
             android:layout_height="wrap_content"
             android:text="Location"
             android:textSize="14sp" />
 
+        <Button
+            android:id="@+id/share_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share" />
+
     </LinearLayout>
 
-    <Button
-        android:id="@+id/item_share_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Share" />
 
 </LinearLayout>

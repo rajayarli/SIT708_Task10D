@@ -1,11 +1,15 @@
 package com.example.task6d;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -46,17 +50,38 @@ public class AA_recyclerViewAdapter extends RecyclerView.Adapter<AA_recyclerView
         return itemList.size();
     }
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder {
+    public class MyViewHolder extends RecyclerView.ViewHolder {
         ImageView imageView;
         TextView receiver, location;
         Button share;
+        LinearLayout linear;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             imageView = itemView.findViewById(R.id.item_image);
             receiver = itemView.findViewById(R.id.receiver);
             location = itemView.findViewById(R.id.location);
-            share = itemView.findViewById(R.id.item_share_button);
+            share = itemView.findViewById(R.id.share_button);
+            linear = itemView.findViewById(R.id.linear);
+
+            share.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    String url = "https://www.google.com";
+                    Intent i = new Intent(Intent.ACTION_VIEW);
+                    i.setData(Uri.parse(url));
+                    context.startActivity(i);
+                }
+            });
+
+            linear.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    Intent intent = new Intent(context, detail.class);
+                    context.startActivity(intent);
+                }
+            });
         }
     }
 }
