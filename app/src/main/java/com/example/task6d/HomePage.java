@@ -64,7 +64,7 @@ public class HomePage extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.recyclerview);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        Intent intent = new Intent(HomePage.this, detail.class);
+        Intent intent = new Intent(HomePage.this, DetailActivity.class);
         intent.putExtra("item", item);
 
         imageButton.setOnClickListener(new View.OnClickListener() {

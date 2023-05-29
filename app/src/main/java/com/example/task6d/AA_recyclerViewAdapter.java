@@ -77,8 +77,7 @@ public class AA_recyclerViewAdapter extends RecyclerView.Adapter<AA_recyclerView
             linear.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-
-                    Intent intent = new Intent(context, detail.class);
+                    Intent intent = new Intent(context, DetailActivity.class);
                     context.startActivity(intent);
                 }
             });

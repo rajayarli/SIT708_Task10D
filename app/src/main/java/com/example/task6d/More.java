@@ -25,9 +25,16 @@ public class More extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(More.this, "Successfully ordered!", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(More.this, HomePage.class);
-                intent.putExtra("item", item);
-                startActivity(intent);
+                Intent home = new Intent(More.this, HomePage.class);
+                Intent detail = new Intent(More.this, DetailActivity.class);
+                Intent intent = getIntent();
+                Item item = (Item) intent.getSerializableExtra("item");
+                String receiver = intent.getStringExtra("receiver");
+                String location = intent.getStringExtra("location");
+                home.putExtra("item", item);
+                detail.putExtra("receiver",receiver);
+                detail.putExtra("location",location);
+                startActivity(home);
             }
         });
     }

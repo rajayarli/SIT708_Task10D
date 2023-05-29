@@ -3,6 +3,12 @@
     <string name="Home">Home</string>
     <string name="Account">Account</string>
     <string name="Myorders">My Orders</string>
+    <string name="drop_off_location_8_11_bryants_road">Drop off location: 8/11 bryants road</string>
+    <string name="approx_fare_10">Approx fare 10$</string>
+    <string name="approx_travel_time_60_min">Approx travel time: 60 min</string>
+    <string name="call_now">Call Now</string>
+    <string name="book_now">Book Now</string>
+    <string name="pick_up_location_mulgrave">Pick up location: mulgrave</string>
     <string-array name="news_full_text">
         <item>election</item>
         <item>hiking</item>
@@ -39,4 +45,6 @@
         <item>wash</item>
         <item>watch</item>
     </string-array>
+
+
 </resources>
